@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import R003 from "./R003_Component";
+import R004 from "./R004_UsingRender";
+import R005 from "./R005_UsingConstructorProps"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>Hello React 200제</h1>
+        <p>1. HTML 적용.</p>
+        <p>2. CSS 적용.</p>
+        <R003/>
+        <R004/>
+        <R005/>
     </div>
   );
 }
