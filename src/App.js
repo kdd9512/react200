@@ -1,8 +1,13 @@
 import React from "react";
 import "./App.css";
-import R003 from "./R003_Component";
-import R004 from "./R004_UsingRender";
-import R005 from "./R005_UsingConstructorProps"
+import R003 from "./component/R003_Component";
+import R004 from "./component/R004_UsingRender";
+import R005 from "./component/R005_UsingConstructorProps";
+import R006 from "./component/R006_LifeCycle";
+import R007 from "./component/R007_ComponentDidMount";
+import R008 from "./component/R008_shouldComponentUpdate";
+import R009 from "./component/R009_Es6";
+import R010 from "./component/R010_Variable";
 
 function App() {
   return (
@@ -13,6 +18,11 @@ function App() {
         <R003/>
         <R004/>
         <R005/>
+        <R006 prop_value="LifeCycle"/>
+        <R007 prop_value="LifeCycle"/>
+        <R008 prop_value="LifeCycle"/>
+        <R009/>
+        <R010/>
     </div>
   );
 }
