@@ -17,6 +17,12 @@ h1 {
     font-family: 궁서;
 }
 
+h2 {
+    color: brown;
+    font-family: 고딕;
+    font-weight: bold;
+}
+
 p {
     color: black;
     font-size: 17px;
