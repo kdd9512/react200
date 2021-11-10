@@ -18,6 +18,12 @@ import R017 from "./component/R017_Props";
 import R018 from "./component/R018_PropTypes";
 import R019 from "./component/R019_PropsBool";
 import R020 from "./component/R020_PropsObjVal";
+import R021 from "./component/R021_PropsReq";
+import R022 from "./component/R022_PropsDefault";
+import R023 from "./component/R023_PropsNode";
+import R024 from "./component/R024_ReactState";
+import R025 from "./component/R025_SetState";
+import R026 from "./component/R026_ForceUpdate";
 
 function App() {
     return (
@@ -58,6 +64,14 @@ function App() {
                     num: "200"
                 }}
             />
+            <R021 ReactNum={200}/>
+            <R022 ReactNum={200}/>
+            <R023>
+                <span>node from App.js</span>
+            </R023>
+            <R024 reactString={"react state "}/>
+            <R025/>
+            <R026/>
         </div>
     );
 }
