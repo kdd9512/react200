@@ -24,6 +24,12 @@ import R023 from "./component/R023_PropsNode";
 import R024 from "./component/R024_ReactState";
 import R025 from "./component/R025_SetState";
 import R026 from "./component/R026_ForceUpdate";
+import R027 from "./component/R027_ComponentClass";
+import R028 from "./component/R028_PureComponentClass";
+import R029 from "./component/R029_ShallowEqual";
+import R030 from "./component/R030_FunctionComponent";
+import R031 from "./component/R031_ReactHook";
+import R032 from "./component/R032_Fragments";
 
 function App() {
     return (
@@ -72,6 +78,12 @@ function App() {
             <R024 reactString={"react state "}/>
             <R025/>
             <R026/>
+            <R027/>
+            <R028/>
+            <R029/>
+            <R030 contents="R030. 함수형 Components"/>
+            <R031/>
+            <R032/>
         </div>
     );
 }
