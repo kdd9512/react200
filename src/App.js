@@ -1,5 +1,7 @@
 import React from "react";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+
 import R003 from "./component/R003_Component";
 import R004 from "./component/R004_UsingRender";
 import R005 from "./component/R005_UsingConstructorProps";
@@ -30,6 +32,11 @@ import R029 from "./component/R029_ShallowEqual";
 import R030 from "./component/R030_FunctionComponent";
 import R031 from "./component/R031_ReactHook";
 import R032 from "./component/R032_Fragments";
+import R033 from "./component/R033_ReturnMap";
+import R034 from "./component/R034_ReactStrapAlert";
+import R035 from "./component/R035_ReactStrapBadges";
+import R036 from "./component/R036_ReactstrapBreadcrumbs";
+import R037 from "./component/R037_ReactstrapDropdown";
 
 function App() {
     return (
@@ -84,6 +91,11 @@ function App() {
             <R030 contents="R030. 함수형 Components"/>
             <R031/>
             <R032/>
+            <R033/>
+            <R034/>
+            <R035/>
+            <R036/>
+            <R037/>
         </div>
     );
 }
