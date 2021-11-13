@@ -37,6 +37,12 @@ import R034 from "./component/R034_ReactStrapAlert";
 import R035 from "./component/R035_ReactStrapBadges";
 import R036 from "./component/R036_ReactstrapBreadcrumbs";
 import R037 from "./component/R037_ReactstrapDropdown";
+import R038 from "./component/R038_ReactstrapButtonGroup";
+import R039 from "./component/R039_ReactstrapButtons";
+import R040 from "./component/R040_ReactstrapCard";
+import R041 from "./component/R041_ReactstrapCarousel";
+import R042 from "./component/R042_ReactstrapCollapse";
+import R043 from "./component/R043_ReactstrapFade";
 
 function App() {
     return (
@@ -96,6 +102,12 @@ function App() {
             <R035/>
             <R036/>
             <R037/>
+            <R038/>
+            <R039/>
+            <R040/>
+            <R041/>
+            <R042/>
+            <R043/>
         </div>
     );
 }
