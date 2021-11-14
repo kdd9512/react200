@@ -47,6 +47,9 @@ import R044 from "./component/R044_ReactstrapForm";
 import R045 from "./component/R045_ReactstrapInputGroup";
 import R046 from "./component/R046_ReactstrapJumbotron";
 import R047 from "./component/R047_ReactstrapListGroup";
+import R048 from "./component/R048_ReactstrapModal";
+import R049 from "./component/R049_ReactstrapNavbar";
+import R050 from "./component/R050_ReactstrapPagination";
 
 function App() {
     return (
@@ -116,6 +119,9 @@ function App() {
             <R045/>
             <R046/>
             <R047/>
+            <R048/>
+            <R049/>
+            <R050/>
         </div>
     );
 }

@@ -1,17 +1,30 @@
 import React, {Component} from "react";
-import {ListGroup} from "reactstrap";
+import {Badge, ListGroup, ListGroupItem} from "reactstrap";
 
 class R047_ReactstrapListGroup extends Component {
 
     render() {
         return (
-            <>
-                <ListGroup>
-
-                </ListGroup>
-            </>
+            <ListGroup>
+                <ListGroupItem
+                    color="danger"
+                    className="justify-content-between">
+                    Badge&nbsp;
+                    <Badge pill>200</Badge>
+                </ListGroupItem>
+                <ListGroupItem disabled tag="a" href="#">
+                    Disable
+                </ListGroupItem>
+                <ListGroupItem tag="a" href="http://example.com">
+                    Link
+                </ListGroupItem>
+                <ListGroupItem tag="button" action onClick={e => alert("button")}>
+                    Button
+                </ListGroupItem>
+            </ListGroup>
         );
     }
 
 }
+
 export default R047_ReactstrapListGroup
