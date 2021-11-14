@@ -6,20 +6,23 @@ const items = [
     {
         src: "https://image.freepik.com/free-vector/dark-background-with-dynamic-shapes_23-2148865191.jpg",
         altTest: "slide1 image",
-        caption: "1",
-        header: "slide1 title"
+        caption: "slide1 desc",
+        header: "slide1 title",
+        key: "1"
     },
     {
         src: "https://image.freepik.com/free-vector/dark-background-with-dynamic-shapes_23-2148865191.jpg",
         altTest: "slide2 image",
-        caption: "2",
-        header: "slide2 title"
+        caption: "slide2 desc",
+        header: "slide2 title",
+        key: "2"
     },
     {
         src: "https://image.freepik.com/free-vector/dark-background-with-dynamic-shapes_23-2148865191.jpg",
         altTest: "slide3 image",
-        caption: "3",
-        header: "slide3 title"
+        caption: "slide3 desc",
+        header: "slide3 title",
+        key:"3"
     }
 ]
 
@@ -27,7 +30,7 @@ class R041_ReactstrapCarousel extends Component {
 
     render() {
         return (
-            <UncontrolledCarousel items={items}/>
+            <UncontrolledCarousel items={items} style={{padding:"0px"}}/>
         );
     }
 }

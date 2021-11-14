@@ -43,6 +43,10 @@ import R040 from "./component/R040_ReactstrapCard";
 import R041 from "./component/R041_ReactstrapCarousel";
 import R042 from "./component/R042_ReactstrapCollapse";
 import R043 from "./component/R043_ReactstrapFade";
+import R044 from "./component/R044_ReactstrapForm";
+import R045 from "./component/R045_ReactstrapInputGroup";
+import R046 from "./component/R046_ReactstrapJumbotron";
+import R047 from "./component/R047_ReactstrapListGroup";
 
 function App() {
     return (
@@ -108,6 +112,10 @@ function App() {
             <R041/>
             <R042/>
             <R043/>
+            <R044/>
+            <R045/>
+            <R046/>
+            <R047/>
         </div>
     );
 }
