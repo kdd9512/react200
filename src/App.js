@@ -50,6 +50,21 @@ import R047 from "./component/R047_ReactstrapListGroup";
 import R048 from "./component/R048_ReactstrapModal";
 import R049 from "./component/R049_ReactstrapNavbar";
 import R050 from "./component/R050_ReactstrapPagination";
+import R051 from "./component/R051_ReactstrapPopover";
+import R052 from "./component/R052_ReactstrapProgress";
+import R053 from "./component/R053_ReactstrapSpinner";
+import R054 from "./component/R054_ReactstrapTable";
+import R055 from "./component/R055_ReactstrapTab";
+import R056 from "./component/R056_Sweetalert2Basic";
+import R057 from "./component/R057_Sweetalert2Position";
+import R058 from "./component/R058_Sweetalert2Confirm";
+import R059 from "./component/R059_FetchGet";
+import R060 from "./component/R060_FetchPost";
+import R061 from "./component/R061_AxiosGet";
+import R062 from "./component/R062_AxiosPost";
+import R063 from "./component/R063_CallbackFunc";
+import R064 from "./component/R064_Promise";
+import R065 from "./component/R065_Promise_Catch";
 
 function App() {
     return (
@@ -122,6 +137,21 @@ function App() {
             <R048/>
             <R049/>
             <R050/>
+            <R051/>
+            <R052/>
+            <R053/>
+            <R054/>
+            <R055/>
+            <R056/>
+            <R057/>
+            <R058/>
+            <R059/>
+            <R060/>
+            <R061/>
+            <R062/>
+            <R063/>
+            <R064/>
+            <R065/>
         </div>
     );
 }
