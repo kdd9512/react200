@@ -65,6 +65,12 @@ import R062 from "./component/R062_AxiosPost";
 import R063 from "./component/R063_CallbackFunc";
 import R064 from "./component/R064_Promise";
 import R065 from "./component/R065_Promise_Catch";
+import R066 from "./component/R066_OnClick";
+import R067 from "./component/R067_OnChange";
+import R068 from "./component/R068_OnMouseMove";
+import R069 from "./component/R069_OnMouseOver";
+import R070 from "./component/R070_OnMouseOut";
+
 
 function App() {
     return (
@@ -152,6 +158,11 @@ function App() {
             <R063/>
             <R064/>
             <R065/>
+            <R066/>
+            <R067/>
+            <R068/>
+            <R069/>
+                <R070/>
         </div>
     );
 }
