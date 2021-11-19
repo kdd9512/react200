@@ -10,7 +10,7 @@ class R070_OnMouseOut extends Component {
         return (
             <div style={{marginTop: "50px", marginBottom: "50px"}}>
                 <div onMouseOut={e => this.onMouseOut("div")}>
-                    <h1>R069 OnMouseOver</h1>
+                    <h1>R070 OnMouseOut</h1>
                 </div>
                 <input type="text" onMouseOut={e => this.onMouseOut("input")}/>
                 <select onMouseOut={e => this.onMouseOut("select")}>

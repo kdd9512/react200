@@ -70,6 +70,9 @@ import R067 from "./component/R067_OnChange";
 import R068 from "./component/R068_OnMouseMove";
 import R069 from "./component/R069_OnMouseOver";
 import R070 from "./component/R070_OnMouseOut";
+import R071 from "./component/R071_OnKey";
+import R072 from "./component/R072_OnSubmit";
+import R073 from "./component/R073_ReactRef";
 
 
 function App() {
@@ -162,7 +165,10 @@ function App() {
             <R067/>
             <R068/>
             <R069/>
-                <R070/>
+            <R070/>
+            <R071/>
+            <R072/>
+            <R073/>
         </div>
     );
 }

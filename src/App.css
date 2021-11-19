@@ -2,32 +2,32 @@
 2.  css 적용.
 */
 
-/*div {*/
-/*    background-color: rgb(160, 197, 221);*/
-/*    color: rgb(255,255,255);*/
-/*    padding: 40px;*/
-/*    font-family: 고딕;*/
-/*    text-align: center;*/
-/*}*/
+div {
+    background-color: rgb(160, 197, 221);
+    color: rgb(255,255,255);
+    padding: 40px;
+    font-family: 고딕;
+    text-align: center;
+}
 
-/*h1 {*/
-/*    color: white;*/
-/*    background-color: darkgreen;*/
-/*    padding: 10px;*/
-/*    font-family: 궁서;*/
-/*}*/
+h1 {
+    color: white;
+    background-color: darkgreen;
+    padding: 10px;
+    font-family: 궁서;
+}
 
-/*h2 {*/
-/*    color: brown;*/
-/*    font-family: 고딕;*/
-/*    font-weight: bold;*/
-/*}*/
+h2 {
+    color: brown;
+    font-family: 고딕;
+    font-weight: bold;
+}
 
-/*p {*/
-/*    color: black;*/
-/*    font-size: 17px;*/
-/*    font-weight: bold;*/
-/*}*/
+p {
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+}
 
 .carousel-indicators {
     visibility: hidden;
