@@ -73,6 +73,8 @@ import R070 from "./component/R070_OnMouseOut";
 import R071 from "./component/R071_OnKey";
 import R072 from "./component/R072_OnSubmit";
 import R073 from "./component/R073_ReactRef";
+import R074 from "./component/R074_ReactCurring";
+import R075 from "./component/R075_ReactHigherOrder";
 
 
 function App() {
@@ -169,6 +171,8 @@ function App() {
             <R071/>
             <R072/>
             <R073/>
+            <R074/>
+            <R075 name="React200"/>
         </div>
     );
 }
