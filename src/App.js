@@ -1,4 +1,4 @@
-import React from "react";
+import React, {Component} from "react";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -75,106 +75,120 @@ import R072 from "./component/R072_OnSubmit";
 import R073 from "./component/R073_ReactRef";
 import R074 from "./component/R074_ReactCurring";
 import R075 from "./component/R075_ReactHigherOrder";
+import R076 from "./component/R076_ContextApi";
+import R077 from "./component/R077_ContextApi";
+import R078 from "./component/R078_StrAddButton";
 
 
-function App() {
-    return (
-        <div className="App">
-            <h1>Hello React 200제</h1>
-            <h2>예제 결과는 console 참고</h2>
-            <p>1. HTML 적용.</p>
-            <p>2. CSS 적용.</p>
-            <R003/>
-            <R004/>
-            <R005/>
-            <R006 prop_value="LifeCycle"/>
-            <R007 prop_value="LifeCycle"/>
-            <R008 prop_value="LifeCycle"/>
-            <R009/>
-            <R010/>
-            <R011/>
-            <R012/>
-            <R013/>
-            <R014/>
-            <R015/>
-            <R016/>
-            <R017 props_val="R017_Props"/>
-            <R018
-                // 다양한 유형의 props 를 전달.
-                String="react"
-                Number={100}
-                Boolean={1 == 1}
-                Array={[0, 1, 2]}
-                ObjectJson={{react: "리액트", num: "200"}}
-                Function={console.log("FunctionProps : function")}
-            />
-            <R019 TrueFalse={false}/>
-            <R019 TrueFalse/>
-            <R020 ObjectJson={
-                {
-                    react: "리액트",
-                    num: "200"
-                }}
-            />
-            <R021 ReactNum={200}/>
-            <R022 ReactNum={200}/>
-            <R023>
-                <span>node from App.js</span>
-            </R023>
-            <R024 reactString={"react state "}/>
-            <R025/>
-            <R026/>
-            <R027/>
-            <R028/>
-            <R029/>
-            <R030 contents="R030. 함수형 Components"/>
-            <R031/>
-            <R032/>
-            <R033/>
-            <R034/>
-            <R035/>
-            <R036/>
-            <R037/>
-            <R038/>
-            <R039/>
-            <R040/>
-            <R041/>
-            <R042/>
-            <R043/>
-            <R044/>
-            <R045/>
-            <R046/>
-            <R047/>
-            <R048/>
-            <R049/>
-            <R050/>
-            <R051/>
-            <R052/>
-            <R053/>
-            <R054/>
-            <R055/>
-            <R056/>
-            <R057/>
-            <R058/>
-            <R059/>
-            <R060/>
-            <R061/>
-            <R062/>
-            <R063/>
-            <R064/>
-            <R065/>
-            <R066/>
-            <R067/>
-            <R068/>
-            <R069/>
-            <R070/>
-            <R071/>
-            <R072/>
-            <R073/>
-            <R074/>
-            <R075 name="React200"/>
-        </div>
-    );
+class App extends Component {
+    render() {
+        return (
+            <div className="App">
+                <h1>Hello React 200제</h1>
+                <h2>예제 결과는 console 참고</h2>
+                <p>1. HTML 적용.</p>
+                <p>2. CSS 적용.</p>
+                <R003/>
+                <R004/>
+                <R005/>
+                <R006 prop_value="LifeCycle"/>
+                <R007 prop_value="LifeCycle"/>
+                <R008 prop_value="LifeCycle"/>
+                <R009/>
+                <R010/>
+                <R011/>
+                <R012/>
+                <R013/>
+                <R014/>
+                <R015/>
+                <R016/>
+                <R017 props_val="R017_Props"/>
+                <R018
+                    // 다양한 유형의 props 를 전달.
+                    String="react"
+                    Number={100}
+                    Boolean={1 == 1}
+                    Array={[0, 1, 2]}
+                    ObjectJson={{react: "리액트", num: "200"}}
+                    Function={console.log("FunctionProps : function")}
+                />
+                <R019 TrueFalse={false}/>
+                <R019 TrueFalse/>
+                <R020 ObjectJson={
+                    {
+                        react: "리액트",
+                        num: "200"
+                    }}
+                />
+                <R021 ReactNum={200}/>
+                <R022 ReactNum={200}/>
+                <R023>
+                    <span>node from App.js</span>
+                </R023>
+                <R024 reactString={"react state "}/>
+                <R025/>
+                <R026/>
+                <R027/>
+                <R028/>
+                <R029/>
+                <R030 contents="R030. 함수형 Components"/>
+                <R031/>
+                <R032/>
+                <R033/>
+                <R034/>
+                <R035/>
+                <R036/>
+                <R037/>
+                <R038/>
+                <R039/>
+                <R040/>
+                <R041/>
+                <R042/>
+                <R043/>
+                <R044/>
+                <R045/>
+                <R046/>
+                <R047/>
+                <R048/>
+                <R049/>
+                <R050/>
+                <R051/>
+                <R052/>
+                <R053/>
+                <R054/>
+                <R055/>
+                <R056/>
+                <R057/>
+                <R058/>
+                <R059/>
+                <R060/>
+                <R061/>
+                <R062/>
+                <R063/>
+                <R064/>
+                <R065/>
+                <R066/>
+                <R067/>
+                <R068/>
+                <R069/>
+                <R070/>
+                <R071/>
+                <R072/>
+                <R073/>
+                <R074/>
+                <R075 name="React200"/>
+                <R076/>
+                <R077/>
+                {/*R078~R080*/}
+                <div>
+                    <span>{this.props.store.getState().data.str}</span>
+                    <br/>
+                    <R078 store={this.props.store}/>
+                </div>
+            </div>
+        );
+    }
+
 }
 
 export default App;
