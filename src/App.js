@@ -78,6 +78,8 @@ import R075 from "./component/R075_ReactHigherOrder";
 import R076 from "./component/R076_ContextApi";
 import R077 from "./component/R077_ContextApi";
 import R078 from "./component/R078_StrAddButton";
+import {connect} from "react-redux";
+import R081_ReactReduxStrAddBtn from "./component/R081_ReactReduxStrAddBtn";
 
 
 class App extends Component {
@@ -185,10 +187,30 @@ class App extends Component {
                     <br/>
                     <R078 store={this.props.store}/>
                 </div>
+                {/*R081~R083*/}
+                <div>
+                    <h1>R081~083</h1>
+                        {/*<span>{this.props.store.getState().data.str}</span><br/>*/}
+                        <span>{this.props.str}</span>
+                        {/*<R081_ReactReduxStrAddBtn store={this.props.store}/>*/}
+                        <R081_ReactReduxStrAddBtn AppProp="200"/>
+                </div>
             </div>
         );
     }
-
 }
+
+// R081~R083
+//
+let mapStateToProps=(state, props)=>{
+        console.log("Props from Index.js : " + props.indexProp)
+        return {
+                str: state.data.str,
+        }
+}
+// connect 괄호 안 위치에 따른 함수.
+// 첫번째 : store 의 상태값을 Component Props 에 할당.
+// 두번째 : dispatch 함수를 Component 함수에 binding.
+App = connect(mapStateToProps,null)(App);
 
 export default App;
