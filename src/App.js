@@ -80,6 +80,7 @@ import R077 from "./component/R077_ContextApi";
 import R078 from "./component/R078_StrAddButton";
 import {connect} from "react-redux";
 import R081_ReactReduxStrAddBtn from "./component/R081_ReactReduxStrAddBtn";
+import R085 from "./component/R085_cookieSave";
 
 
 class App extends Component {
@@ -181,20 +182,23 @@ class App extends Component {
                 <R075 name="React200"/>
                 <R076/>
                 <R077/>
+
                 {/*R078~R080*/}
-                <div>
-                    <span>{this.props.store.getState().data.str}</span>
-                    <br/>
-                    <R078 store={this.props.store}/>
-                </div>
+                {/*<div>*/}
+                {/*    <span>{this.props.store.getState().data.str}</span>*/}
+                {/*    <br/>*/}
+                {/*    <R078 store={this.props.store}/>*/}
+                {/*</div>*/}
+
                 {/*R081~R083*/}
                 <div>
                     <h1>R081~083</h1>
-                        {/*<span>{this.props.store.getState().data.str}</span><br/>*/}
-                        <span>{this.props.str}</span>
-                        {/*<R081_ReactReduxStrAddBtn store={this.props.store}/>*/}
-                        <R081_ReactReduxStrAddBtn AppProp="200"/>
+                    {/*<span>{this.props.store.getState().data.str}</span><br/>*/}
+                    <span>{this.props.str}</span>
+                    {/*<R081_ReactReduxStrAddBtn store={this.props.store}/>*/}
+                    <R081_ReactReduxStrAddBtn AppProp="200"/>
                 </div>
+                <R085/>
             </div>
         );
     }
@@ -202,15 +206,15 @@ class App extends Component {
 
 // R081~R083
 //
-let mapStateToProps=(state, props)=>{
-        console.log("Props from Index.js : " + props.indexProp)
-        return {
-                str: state.data.str,
-        }
+let mapStateToProps = (state, props) => {
+    console.log("R081~R083 Props from Index.js : " + props.indexProp)
+    return {
+        str: state.data.str,
+    }
 }
 // connect 괄호 안 위치에 따른 함수.
 // 첫번째 : store 의 상태값을 Component Props 에 할당.
 // 두번째 : dispatch 함수를 Component 함수에 binding.
-App = connect(mapStateToProps,null)(App);
+App = connect(mapStateToProps, null)(App);
 
 export default App;
