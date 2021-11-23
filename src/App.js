@@ -81,6 +81,8 @@ import R078 from "./component/R078_StrAddButton";
 import {connect} from "react-redux";
 import R081_ReactReduxStrAddBtn from "./component/R081_ReactReduxStrAddBtn";
 import R085 from "./component/R085_cookieSave";
+import R086 from "./component/R086_cookieLoad";
+import R087 from "./component/R087_cookieRemove";
 
 
 class App extends Component {
@@ -199,6 +201,8 @@ class App extends Component {
                     <R081_ReactReduxStrAddBtn AppProp="200"/>
                 </div>
                 <R085/>
+                <R086/>
+                <R087/>
             </div>
         );
     }
