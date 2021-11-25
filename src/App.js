@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import {connect} from "react-redux";
+import {Route, Routes} from "react-router-dom";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -78,12 +80,12 @@ import R075 from "./component/R075_ReactHigherOrder";
 import R076 from "./component/R076_ContextApi";
 import R077 from "./component/R077_ContextApi";
 import R078 from "./component/R078_StrAddButton";
-import {connect} from "react-redux";
-import R081_ReactReduxStrAddBtn from "./component/R081_ReactReduxStrAddBtn";
+import R081 from "./component/R081_ReactReduxStrAddBtn";
 import R085 from "./component/R085_cookieSave";
 import R086 from "./component/R086_cookieLoad";
 import R087 from "./component/R087_cookieRemove";
-
+import R089 from "./component/R089_reactRouter";
+import R089_2 from "./component/R089_reactRouter2";
 
 class App extends Component {
     render() {
@@ -197,12 +199,17 @@ class App extends Component {
                     <h1>R081~083</h1>
                     {/*<span>{this.props.store.getState().data.str}</span><br/>*/}
                     <span>{this.props.str}</span>
-                    {/*<R081_ReactReduxStrAddBtn store={this.props.store}/>*/}
-                    <R081_ReactReduxStrAddBtn AppProp="200"/>
+                    {/*<R081 store={this.props.store}/>*/}
+                    <R081 AppProp="200"/>
                 </div>
                 <R085/>
                 <R086/>
                 <R087/>
+                {/*R088 ~ R89*/}
+                <Routes>
+                    <Route path="/reactRouter" component={R089}/>
+                    <Route path="/reactRouter2" component={R089_2}/>
+                </Routes>
             </div>
         );
     }

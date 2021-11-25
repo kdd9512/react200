@@ -4,6 +4,7 @@ import App from './App';
 import {applyMiddleware, createStore} from "redux";
 import reducers from "./reducers"
 import {Provider} from "react-redux";
+import {BrowserRouter} from "react-router-dom";
 
 // R084 redux 미들웨어
 const CallMiddleware = store => nextMiddle => action => {
@@ -20,7 +21,7 @@ const CallMiddleware = store => nextMiddle => action => {
     return result;
 }
 
-const store = createStore(reducers,applyMiddleware(CallMiddleware));
+const store = createStore(reducers, applyMiddleware(CallMiddleware));
 
 const listener = () => {
     // R078~80
@@ -32,7 +33,10 @@ const listener = () => {
     // R081~083
     ReactDOM.render(
         <Provider store={store}>
-            <App indexProp="react"/>
+            {/*R088~R089*/}
+            <BrowserRouter>
+                <App indexProp="react"/>
+            </BrowserRouter>
         </Provider>,
         document.getElementById("root")
     );
