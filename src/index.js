@@ -4,7 +4,7 @@ import App from './App';
 import {applyMiddleware, createStore} from "redux";
 import reducers from "./reducers"
 import {Provider} from "react-redux";
-import {BrowserRouter} from "react-router-dom";
+import {BrowserRouter, HashRouter} from "react-router-dom";
 
 // R084 redux 미들웨어
 const CallMiddleware = store => nextMiddle => action => {
@@ -32,12 +32,11 @@ const listener = () => {
 
     // R081~083
     ReactDOM.render(
-        <Provider store={store}>
-            {/*R088~R089*/}
-            <BrowserRouter>
+        <BrowserRouter>
+            <Provider store={store}>
                 <App indexProp="react"/>
-            </BrowserRouter>
-        </Provider>,
+            </Provider>
+        </BrowserRouter>,
         document.getElementById("root")
     );
 };

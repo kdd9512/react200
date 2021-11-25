@@ -205,10 +205,11 @@ class App extends Component {
                 <R085/>
                 <R086/>
                 <R087/>
-                {/*R088 ~ R89*/}
+                {/*R088 ~ R89. 2021년 10월 경, react router dom 문법이 많이 변경되었으므로
+                도서에서 설명하는것과는 다르게 작성해야 동작한다..*/}
                 <Routes>
-                    <Route path="/reactRouter" component={R089}/>
-                    <Route path="/reactRouter2" component={R089_2}/>
+                    <Route path="/reactRouter" element={<R089/>}/>
+                    <Route path="/reactRouter2" element={<R089_2/>}/>
                 </Routes>
             </div>
         );
