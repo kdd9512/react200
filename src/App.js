@@ -86,6 +86,7 @@ import R086 from "./component/R086_cookieLoad";
 import R087 from "./component/R087_cookieRemove";
 import R089 from "./component/R089_reactRouter";
 import R089_2 from "./component/R089_reactRouter2";
+import R090 from "./component/R090_ReactRouter";
 
 class App extends Component {
     render() {
@@ -206,11 +207,13 @@ class App extends Component {
                 <R086/>
                 <R087/>
                 {/*R088 ~ R89. 2021년 10월 경, react router dom 문법이 많이 변경되었으므로
-                도서에서 설명하는것과는 다르게 작성해야 동작한다..*/}
+                도서에서 설명하는것과는 다르게, 이하와 같이 작성해야 동작한다.*/}
                 <Routes>
                     <Route path="/reactRouter" element={<R089/>}/>
                     <Route path="/reactRouter2" element={<R089_2/>}/>
                 </Routes>
+                {/*react-router-dom 예제는 react 200_1 프로젝트에서 새로 다루겠음.*/}
+                <R090/>
             </div>
         );
     }
